@@ -11,38 +11,209 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/favicon.png">
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<style>
+	.full-width-image {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 2rem auto;
+  border-radius: 4px;
+  overflow: hidden;
+}
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/TVSSClogo.jpg" alt="" /></span>
-						<h1>The TVS Science Collaboration In-kind Contributions Catalogue
-						</h1>
-						<p><br />
-						built by the TVS Software Taskforce 
-						</p>
-					</header>
+.full-width-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Table of Contents */
+.toc-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(0,0,0,0.03);
+  border-radius: 4px;
+}
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">In-Kind Contributors List</a></li>
-							<li><a href="#second">Youtube</a></li>
-							<li><a href="#cta">Science Cases</a></li>
-						</ul>
-					</nav>
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.toc-list li {
+  margin: 0;
+}
+
+/* Project Container */
+.project-container {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.project-title {
+  margin-bottom: 0.5rem;
+}
+
+.contributors {
+  margin-bottom: 1rem;
+}
+
+/* Details Table */
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.details-table td {
+  padding: 0.25rem 0.5rem;
+  vertical-align: top;
+  width: 50%;
+}
+
+/* Description */
+.project-description {
+  margin-bottom: 1rem;
+}
+
+/* Resources */
+.resources-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.resources-list li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* Divider */
+.project-divider {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+/* Remove any existing animations */
+.logo img {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Layout for side-by-side logos */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo-left, .logo-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-left {
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
+  .logo-right {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  .header-text {
+    flex: 2;
+    text-align: center;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+    }
+    
+    .logo-left, .logo-right {
+      margin: 10px 0;
+    }
+    
+    .logo-left {
+      padding-right: 0;
+      order: 1;
+    }
+    
+    .header-text {
+      order: 2;
+    }
+    
+    .logo-right {
+      padding-left: 0;
+      order: 3;
+    }
+  }
+
+
+	</style>
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header" class="alt">
+	<div class="header-container">
+	  <div class="logo-left">
+		<span class="logo primary"><img src="images/TVSSClogo.jpg" alt="TVS Science Collaboration Logo" style="max-height: auto; width: 200 px;" /></span>
+	  </div>
+	  
+	  <div class="header-text">
+		<h1>The TVS Science Collaboration</h1>
+		<h2>In-kind Contributions Catalogue</h2>
+		<p>Built by the TVS Software Taskforce</p>
+	  </div>
+	  
+	  <div class="logo-right">
+		<span class="logo secondary"><img src="images/LSST_DA.png" alt="Partner Organization Logo" style="max-height: auto; width: 200 px;" /></span>
+	  </div>
+	</div>
+  </header>
+  
+	<!-- Nav -->
+	<nav id="nav">
+	  <ul>
+		<li><a href="#intro" class="active">Introduction</a></li>
+		<li><a href="#first">In-Kind Contributions List</a></li>
+		<li><a href="#second">Youtube</a></li>
+		<li><a href="#cta">Science Cases</a></li>
+	  </ul>
+	</nav>
 
 				<!-- Main -->
 					<div id="main">
 
 						<!-- Introduction -->
 							<section id="intro" class="main">
-								<div class="spotlight">
+
+								<div class="full-width-image" style="max-width: 800px; margin: 0 auto 2rem auto;">
+									<img src="images/In_Kind_Project_Overview.png" alt="In-Kind Project Overview" />
+								  </div>
+
+
 									<div class="content">
 										<header class="major">
 											<h2>What is the Rubin LSST In-kind Program?
@@ -59,91 +230,147 @@
 											<li><a href="https://lsst-tvssc.github.io/" class="button">Transient and Variable Stars SC LSST</a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images\In_Kind_Project_Overview.png" alt="" /></span>
-								</div>
 							</section>
 
 							<section id="first" class="main special">
 								<header class="major">
-								  <h2>In-kind Contributors</h2>
+								  <h2>In-kind Contributions</h2>
 								</header>
 								
-								<div class="contributor-cards">
-								  <div class="contributor-card">
-									<span class="icon major style1 fa-code"></span>
-									<h3>[Contributor Type 1]</h3>
-									<div class="contributor-details">
-									  <p><strong>Names & Affiliations:</strong> [Name 1] ([Affiliation 1]), [Name 2] ([Affiliation 2]), [Name 3] ([Affiliation 3])</p>
-									  <p><strong>Contact:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
-									  <p><strong>Project ID:</strong> [ID-CODE-001]</p>
-									  <p><strong>Directable:</strong> [Yes/No]</p>
-									  <p><strong>Project Title:</strong> [Project Title 1]</p>
-									  <p><strong>Description:</strong> [Brief description of the project, its goals, methods, and expected outcomes]</p>
-									  <p><strong>Recipients:</strong> [Recipient Organization(s)]</p>
-									  <p><strong>Duration:</strong> [Start Date] - [End Date]</p>
-									  <p><strong>Resources:</strong> <a href="#">[Research Paper]</a> | <a href="#">[Repository]</a></p>
-									  
-									  <div class="science-case-dropdown">
-										<button class="dropbtn">Science Cases</button>
-										<div class="dropdown-content">
-										  <a href="#">[Science Case 1]</a>
-										  <a href="#">[Science Case 2]</a>
-										  <a href="#">[Science Case 3]</a>
-										</div>
-									  </div>
-									</div>
-								  </div>
+								<!-- Table of Contents -->
+								<div class="toc-section">
+								  <h3>Project Directory</h3>
+								  <ul class="toc-list">
+									<li><a href="#project-001">[Project Title 1]</a></li>
+									<li><a href="#project-002">[Project Title 2]</a></li>
+									<li><a href="#project-003">[Project Title 3]</a></li>
+								  </ul>
+								</div>
 							  
-								  <div class="contributor-card">
-									<span class="icon major style3 fa-copy"></span>
-									<h3>[Contributor Type 2]</h3>
-									<div class="contributor-details">
-									  <p><strong>Names & Affiliations:</strong> [Name 1] ([Affiliation 1]), [Name 2] ([Affiliation 2]), [Name 3] ([Affiliation 3])</p>
-									  <p><strong>Contact:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
-									  <p><strong>Project ID:</strong> [ID-CODE-002]</p>
-									  <p><strong>Directable:</strong> [Yes/No]</p>
-									  <p><strong>Project Title:</strong> [Project Title 2]</p>
-									  <p><strong>Description:</strong> [Brief description of the project, its goals, methods, and expected outcomes]</p>
-									  <p><strong>Recipients:</strong> [Recipient Organization(s)]</p>
-									  <p><strong>Duration:</strong> [Start Date] - [End Date]</p>
-									  <p><strong>Resources:</strong> <a href="#">[Technical Documentation]</a> | <a href="#">[Repository]</a></p>
-									  
-									  <div class="science-case-dropdown">
-										<button class="dropbtn">Science Cases</button>
-										<div class="dropdown-content">
-										  <a href="#">[Science Case 1]</a>
-										  <a href="#">[Science Case 2]</a>
-										  <a href="#">[Science Case 3]</a>
-										</div>
-									  </div>
-									</div>
+								<!-- Project 1 -->
+								<div id="project-001" class="project-container">
+								  <h3 class="project-title">[Project Title 1]</h3>
+								  
+								  <div class="contributors">
+									<strong>Contributors:</strong> [Name 1] ([Affiliation 1]), [Name 2] ([Affiliation 2]), [Name 3] ([Affiliation 3])
 								  </div>
+								  
+								  <div class="project-details">
+									<table class="details-table">
+									  <tr>
+										<td><strong>Project ID:</strong> [ID-CODE-001]</td>
+										<td><strong>Directable:</strong> [Yes/No]</td>
+									  </tr>
+									  <tr>
+										<td><strong>Duration:</strong> [Start Date] - [End Date]</td>
+										<td><strong>Recipients:</strong> [Recipient Organization(s)]</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> [Science Case 1], [Science Case 2]</td>
+										<td><strong>Contact:</strong> <a href="mailto:contact@example.com">contact@example.com</a></td>
+									  </tr>
+									</table>
+								  </div>
+								  
+								  <div class="project-description">
+									<p>[Brief description of the project, its goals, methods, and expected outcomes. This can be 1-2 paragraphs explaining the project in more detail.]</p>
+								  </div>
+								  
+								  <div class="project-resources">
+									<strong>Resources:</strong>
+									<ul class="resources-list">
+									  <li><a href="#">[Research Paper]</a></li>
+									  <li><a href="#">[Repository]</a></li>
+									</ul>
+								  </div>
+								  
+								  <hr class="project-divider">
+								</div>
 							  
-								  <div class="contributor-card">
-									<span class="icon major style5 fa-diamond"></span>
-									<h3>[Contributor Type 3]</h3>
-									<div class="contributor-details">
-									  <p><strong>Names & Affiliations:</strong> [Name 1] ([Affiliation 1]), [Name 2] ([Affiliation 2]), [Name 3] ([Affiliation 3])</p>
-									  <p><strong>Contact:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
-									  <p><strong>Project ID:</strong> [ID-CODE-003]</p>
-									  <p><strong>Directable:</strong> [Yes/No]</p>
-									  <p><strong>Project Title:</strong> [Project Title 3]</p>
-									  <p><strong>Description:</strong> [Brief description of the project, its goals, methods, and expected outcomes]</p>
-									  <p><strong>Recipients:</strong> [Recipient Organization(s)]</p>
-									  <p><strong>Duration:</strong> [Start Date] - [End Date]</p>
-									  <p><strong>Resources:</strong> <a href="#">[Publication]</a> | <a href="#">[Database]</a></p>
-									  
-									  <div class="science-case-dropdown">
-										<button class="dropbtn">Science Cases</button>
-										<div class="dropdown-content">
-										  <a href="#">[Science Case 1]</a>
-										  <a href="#">[Science Case 2]</a>
-										  <a href="#">[Science Case 3]</a>
-										</div>
-									  </div>
-									</div>
+								<!-- Project 2 -->
+								<div id="project-002" class="project-container">
+								  <h3 class="project-title">[Project Title 2]</h3>
+								  
+								  <div class="contributors">
+									<strong>Contributors:</strong> [Name 1] ([Affiliation 1]), [Name 2] ([Affiliation 2]), [Name 3] ([Affiliation 3])
+								  </div>
+								  
+								  <div class="project-details">
+									<table class="details-table">
+									  <tr>
+										<td><strong>Project ID:</strong> [ID-CODE-002]</td>
+										<td><strong>Directable:</strong> [Yes/No]</td>
+									  </tr>
+									  <tr>
+										<td><strong>Duration:</strong> [Start Date] - [End Date]</td>
+										<td><strong>Recipients:</strong> [Recipient Organization(s)]</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> [Science Case 1], [Science Case 3]</td>
+										<td><strong>Contact:</strong> <a href="mailto:contact@example.com">contact@example.com</a></td>
+									  </tr>
+									</table>
+								  </div>
+								  
+								  <div class="project-description">
+									<p>[Brief description of the project, its goals, methods, and expected outcomes. This can be 1-2 paragraphs explaining the project in more detail.]</p>
+								  </div>
+								  
+								  <div class="project-resources">
+									<strong>Resources:</strong>
+									<ul class="resources-list">
+									  <li><a href="#">[Technical Documentation]</a></li>
+									  <li><a href="#">[Repository]</a></li>
+									</ul>
+								  </div>
+								  
+								  <hr class="project-divider">
+								</div>
+							  
+								<!-- Project 3 -->
+								<div id="project-003" class="project-container">
+								  <h3 class="project-title">[Project Title 3]</h3>
+								  
+								  <div class="contributors">
+									<strong>Contributors:</strong> [Name 1] ([Affiliation 1]), [Name 2] ([Affiliation 2]), [Name 3] ([Affiliation 3])
+								  </div>
+								  
+								  <div class="project-details">
+									<table class="details-table">
+									  <tr>
+										<td><strong>Project ID:</strong> [ID-CODE-003]</td>
+										<td><strong>Directable:</strong> [Yes/No]</td>
+									  </tr>
+									  <tr>
+										<td><strong>Duration:</strong> [Start Date] - [End Date]</td>
+										<td><strong>Recipients:</strong> [Recipient Organization(s)]</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> [Science Case 2]</td>
+										<td><strong>Contact:</strong> <a href="mailto:contact@example.com">contact@example.com</a></td>
+									  </tr>
+									</table>
+								  </div>
+								  
+								  <div class="project-description">
+									<p>[Brief description of the project, its goals, methods, and expected outcomes. This can be 1-2 paragraphs explaining the project in more detail.]</p>
+								  </div>
+								  
+								  <div class="project-resources">
+									<strong>Resources:</strong>
+									<ul class="resources-list">
+									  <li><a href="#">[Publication]</a></li>
+									  <li><a href="#">[Database]</a></li>
+									</ul>
 								  </div>
 								</div>
+							  
+								<footer class="major">
+								  <ul class="actions special">
+									<li><a href="all-contributions.html" class="button">View All Contributions</a></li>
+								  </ul>
+								</footer>
+							  </section>
 
 								<section id="second" class="main special">
 									<header class="major">
@@ -159,70 +386,70 @@
 										  <h3>TVS Software Workshop 3</h3>
 										  <div class="video-container">
 											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=[PLY7gSb9nTMnMZx0l2P7dfgto_EI-7IKC9]" 
+											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnMZx0l2P7dfgto_EI-7IKC9" 
 											  title="TVS Software Workshop 3" 
 											  frameborder="0" 
 											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 											  allowfullscreen>
 											</iframe>
 										  </div>
-										  <p><a href="https://youtube.com/playlist?list=[PLY7gSb9nTMnMZx0l2P7dfgto_EI-7IKC9]" class="button small">View Full Playlist</a></p>
+										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnMZx0l2P7dfgto_EI-7IKC9" class="button small">View Full Playlist</a></p>
 										</div>
 										
 										<div class="playlist-item">
 										  <h3>TVS Software Carpentry Workshop 2</h3>
 										  <div class="video-container">
 											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=[PLY7gSb9nTMnO9e0CSWZRu3tDMpL2qwVGG]" 
+											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnO9e0CSWZRu3tDMpL2qwVGG" 
 											  title="TVS Software Carpentry Workshop 2" 
 											  frameborder="0" 
 											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 											  allowfullscreen>
 											</iframe>
 										  </div>
-										  <p><a href="https://youtube.com/playlist?list=[PLY7gSb9nTMnO9e0CSWZRu3tDMpL2qwVGG]" class="button small">View Full Playlist</a></p>
+										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnO9e0CSWZRu3tDMpL2qwVGG" class="button small">View Full Playlist</a></p>
 										</div>
-										
+
 										<div class="playlist-item">
-										  <h3>Software Workshop: Implementation Techniques</h3>
+										  <h3>TVS Software Workshop 2</h3>
 										  <div class="video-container">
 											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=[PLAYLIST_ID_3]" 
-											  title="Software Workshop: Implementation Techniques" 
+											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnP__1wMBeUcXTvk_F50kkxC" 
+											  title="TVS Software Workshop 2" 
 											  frameborder="0" 
 											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 											  allowfullscreen>
 											</iframe>
 										  </div>
-										  <p><a href="https://youtube.com/playlist?list=[PLAYLIST_ID_3]" class="button small">View Full Playlist</a></p>
+										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnP__1wMBeUcXTvk_F50kkxC" class="button small">View Full Playlist</a></p>
 										</div>
 										
 										<div class="playlist-item">
-										  <h3>Software Carpentry Workshop</h3>
+										  <h3>TVS Software Workshop 1</h3>
 										  <div class="video-container">
 											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=[PLAYLIST_ID_4]" 
-											  title="Software Carpentry Workshop" 
+											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnP0KeNdzvIbUU0GcfCm5udu" 
+											  title="TVS Software Workshop 1" 
 											  frameborder="0" 
 											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 											  allowfullscreen>
 											</iframe>
 										  </div>
-										  <p><a href="https://youtube.com/playlist?list=[PLAYLIST_ID_4]" class="button small">View Full Playlist</a></p>
+										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnP0KeNdzvIbUU0GcfCm5udu" class="button small">View Full Playlist</a></p>
 										</div>
 										
 										<div class="playlist-item">
-										  <h3>Intermediate Python Development Workshop</h3>
+										  <h3>Intermediate Python Development Course</h3>
 										  <div class="video-container">
 											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=[PLAYLIST_ID_5]" 
-											  title="Intermediate Python Development Workshop" 
+											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnP8Nu7HxcQae3YPSq1PAc6d" 
+											  title="Intermediate Python Development Course" 
 											  frameborder="0" 
 											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 											  allowfullscreen>
 											</iframe>
 										  </div>
-										  <p><a href="https://youtube.com/playlist?list=[PLAYLIST_ID_5]" class="button small">View Full Playlist</a></p>
+										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnP8Nu7HxcQae3YPSq1PAc6d" class="button small">View Full Playlist</a></p>
 										</div>
 									  </div>
 									</section>
@@ -343,6 +570,7 @@
 						<li><a href="about.html" class="button">Our Mission</a></li>
 					  </ul>
 					</section>
+					
 					<section>
 					  <h2>Contact Information</h2>
 					  <dl class="alt">
@@ -359,8 +587,9 @@
 						<li><a href="https://youtube.com/@rubinlssttvssciencecollabo9219?si=CPfhTBiLMxQCsnod" class="icon fa-youtube alt"><span class="label">YouTube</span></a></li>
 					  </ul>
 					</section>
-					<section class="funding-acknowledgment">
-					  <h3>Funding & Support</h3>
+					
+					<section>
+					  <h2>Funding & Support</h2>
 					  <p>This collaboration is supported by grants from National Science Foundation, Department of Energy, and contributions from our institutional partners.</p>
 					  <div class="partner-logos">
 						<!-- Placeholder for partner logos -->
@@ -369,7 +598,15 @@
 						<span>[Partner Logo 3]</span>
 					  </div>
 					</section>
-					<p class="copyright">&copy; <span id="year"></span> TVS Science Collaboration. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+				  
+					<section>
+					  <h2>Development Team</h2>
+					  <p>Website developed by:</p>
+					  <ul class="developer-list">
+						<li>Meet J. Vyas</li>
+						<li>Siddharth Chaini</li>
+					  </ul>
+					</section>
 				  </footer>
 
 			</div>
