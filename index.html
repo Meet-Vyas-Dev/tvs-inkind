@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>In-kind Contributions Catalogue</title>
@@ -12,207 +7,79 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" type="image/png" href="images/favicon.png">
+
+
 	</head>
-	<body class="is-preload">
 
-	<style>
-	.full-width-image {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto 2rem auto;
-  border-radius: 4px;
-  overflow: hidden;
-}
+<body class="is-preload">
 
-.full-width-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-/* Table of Contents */
-.toc-section {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background: rgba(0,0,0,0.03);
-  border-radius: 4px;
-}
-
-.toc-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.toc-list li {
-  margin: 0;
-}
-
-/* Project Container */
-.project-container {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-}
-
-.project-title {
-  margin-bottom: 0.5rem;
-}
-
-.contributors {
-  margin-bottom: 1rem;
-}
-
-/* Details Table */
-.details-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1rem;
-}
-
-.details-table td {
-  padding: 0.25rem 0.5rem;
-  vertical-align: top;
-  width: 50%;
-}
-
-/* Description */
-.project-description {
-  margin-bottom: 1rem;
-}
-
-/* Resources */
-.resources-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0.5rem 0 0 0;
-}
-
-.resources-list li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-/* Divider */
-.project-divider {
-  margin: 2rem 0;
-  border: 0;
-  border-top: 1px solid rgba(0,0,0,0.1);
-}
-/* Remove any existing animations */
-.logo img {
-  animation: none !important;
-  opacity: 1 !important;
-  transform: none !important;
-}
-
-/* Layout for side-by-side logos */
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
-}
-
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  .logo-left, .logo-right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-left {
-    justify-content: flex-end;
-    padding-right: 20px;
-  }
-
-  .logo-right {
-    justify-content: flex-start;
-    padding-left: 20px;
-  }
-
-  .header-text {
-    flex: 2;
-    text-align: center;
-  }
-
-  /* Responsive adjustments */
-  @media screen and (max-width: 768px) {
-    .header-container {
-      flex-direction: column;
-    }
-    
-    .logo-left, .logo-right {
-      margin: 10px 0;
-    }
-    
-    .logo-left {
-      padding-right: 0;
-      order: 1;
-    }
-    
-    .header-text {
-      order: 2;
-    }
-    
-    .logo-right {
-      padding-left: 0;
-      order: 3;
-    }
-  }
-
-
-	</style>
-<!-- Wrapper -->
 <div id="wrapper">
 
-<!-- Header -->
 <header id="header" class="alt">
 	<div class="header-container">
-	  <div class="logo-left">
-		<span class="logo primary"><img src="images/TVSSClogo.jpg" alt="TVS Science Collaboration Logo" style="max-height: auto; width: 200 px;" /></span>
-	  </div>
-	  
-	  <div class="header-text">
-		<h1>The TVS Science Collaboration</h1>
-		<h2>In-kind Contributions Catalogue</h2>
-		<p>Built by the TVS Software Taskforce</p>
-	  </div>
-	  
-	  <div class="logo-right">
-		<span class="logo secondary"><img src="images/LSST_DA.png" alt="Partner Organization Logo" style="max-height: auto; width: 200 px;" /></span>
-	  </div>
-	</div>
-  </header>
+	<div class="logo-left">
+	<span class="logo primary"><img src="images/TVSSClogo.jpg" alt="TVS Science Collaboration Logo" style="max-height: auto; width: 200 px;" /></span>
+</div>
+
+<div class="header-text">
+	<h1 style="color: black;">The TVS Science Collaboration</h1>
+	<h2 style="color: black;">In-kind Contributions Catalogue</h2>
+	<p>Built by the TVS Software Taskforce</p>
+</div>
+
+<div class="logo-right">
+<span class="logo secondary"><img src="images/LSST_DA.png" alt="Partner Organization Logo" style="max-height: auto; width: 200 px;" /></span>
+</div>
+</div>
+</header>
   
-	<!-- Nav -->
-	<nav id="nav">
-	  <ul>
-		<li><a href="#intro" class="active">Introduction</a></li>
-		<li><a href="#first">In-Kind Contributions List</a></li>
-		<li><a href="#second">Youtube</a></li>
-		<li><a href="#cta">Science Cases</a></li>
-	  </ul>
-	</nav>
+<nav id="nav">
+	<ul>
+	<li><a href="#intro" class="active">Introduction</a></li>
+	<li><a href="#first">In-Kind Contributions List</a></li>
+	<li><a href="#second">Youtube</a></li>
+	</ul>
+</nav>
 
-				<!-- Main -->
-					<div id="main">
+	<input type="checkbox" id="darkmode-toggle">
+		<label for="darkmode-toggle" class="theme-switch">
+			<svg class="sun" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+			xmlns="http://www.w3.org/2000/svg">
+			<circle cx="12" cy="12" r="5" stroke="#1C274C" stroke-width="1.5" />
+			<path d="M12 2V4" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+			<path d="M12 20V22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+			<path d="M4 12L2 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+			<path d="M22 12L20 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+			<path d="M19.7778 4.22266L17.5558 6.25424" stroke="#1C274C" stroke-width="1.5"
+				stroke-linecap="round" />
+			<path d="M4.22217 4.22266L6.44418 6.25424" stroke="#1C274C" stroke-width="1.5"
+				stroke-linecap="round" />
+			<path d="M6.44434 17.5557L4.22211 19.7779" stroke="#1C274C" stroke-width="1.5"
+				stroke-linecap="round" />
+			<path d="M19.7778 19.7773L17.5558 17.5551" stroke="#1C274C" stroke-width="1.5"
+				stroke-linecap="round" />
+			</svg>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
+			<svg class="moon" fill="#000000" height="800px" width="800px" version="1.1" viewBox="0 0 49.739 49.739"
+			xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
+					c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
+					c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
+					C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
+					c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
+					c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z" />
+			</svg>
+		</label>
+
+
+				<div id="main">
+
+						<section id="intro" class="main">
 
 								<div class="full-width-image" style="max-width: 800px; margin: 0 auto 2rem auto;">
 									<img src="images/In_Kind_Project_Overview.png" alt="In-Kind Project Overview" />
 								  </div>
-
 
 									<div class="content">
 										<header class="major">
@@ -226,8 +93,8 @@
 										<p>The In-kind Program spans many varied contributions providing resources and support to Rubin Operations and the Rubin Science Community. The Rubin LSST Science Collaborations support the CEC and In-kind Program Coordination (IPC) teams in management of the In-kind contributions with their scientific expertise.										</p>
 										<p>The in-kind program is managed collectively by the international programs' Program Managers (PMs), facilitated by the Rubin In-kind Program Coordination Team which reports to the Rubin Director and Deputy Director of Operations.
 										</p>
-										<ul class="actions">
-											<li><a href="https://lsst-tvssc.github.io/" class="button">Transient and Variable Stars SC LSST</a></li>
+										<ul class="actions" style="text-align: center;">
+											<li><a href="https://www.lsst.org/scientists/in-kind-program" class="button">Rubin LSST In-kind Program</a></li>
 										</ul>
 									</div>
 							</section>
@@ -237,389 +104,923 @@
 								  <h2>In-kind Contributions</h2>
 								</header>
 								
-								<!-- Table of Contents -->
 								<div class="toc-section">
-								  <h3>Project Directory</h3>
-								  <ul class="toc-list">
-									<li><a href="#project-001">[Project Title 1]</a></li>
-									<li><a href="#project-002">[Project Title 2]</a></li>
-									<li><a href="#project-003">[Project Title 3]</a></li>
+								<div class="toc-header" id="tocToggle">
+								Project Directory <span id="tocSymbol">–</span>
+								</div>
+								<ul class="toc-list" id="tocList">
+									<li><a href="#project-001">1. Science Software development: spectroscopic classification of transients and 4MOST spectra</a></li>
+									<li><a href="#project-002">2. Software for analysis of variability of celestial sources</a></li>
+									<li><a href="#project-003">3. Machine Learning Classification of Periodic Variable Stars</a></li>
+									<li><a href="#project-004">4. Target and Observations Management (TOM) system Development in the LSST TVS Science Collaboration</a></li>
+									<li><a href="#project-005">5. Software Tools for Stellar Populations in Crowded Fields</a></li>
+									<li><a href="#project-006">6. Tools for the simulation of Pulsating Stars</a></li>
+									<li><a href="#project-007">7. Tools for classification, full characterization and validation of variable sources</a></li>
+									<li><a href="#project-008">8. Cross matching at LSST depths</a></li>
+									<li><a href="#project-009">9. AGN catalogs for transient science </a></li>
 								  </ul>
 								</div>
-							  
-								<!-- Project 1 -->
+								
+								<hr class="project-divider">
+
 								<div id="project-001" class="project-container">
-								  <h3 class="project-title">[Project Title 1]</h3>
+								  <h3 class="project-title">Science Software development: spectroscopic classification of transients and 4MOST spectra</h3>
 								  
 								  <div class="contributors">
-									<strong>Contributors:</strong> [Name 1] ([Affiliation 1]), [Name 2] ([Affiliation 2]), [Name 3] ([Affiliation 3])
+									<strong>Contributors:</strong> Mark Sullivan (University of Southampton), Chris Frohmaier (University of Southampton)
 								  </div>
 								  
 								  <div class="project-details">
 									<table class="details-table">
 									  <tr>
-										<td><strong>Project ID:</strong> [ID-CODE-001]</td>
-										<td><strong>Directable:</strong> [Yes/No]</td>
+										<td><strong>Lead Institution:</strong> University of Southampton</td>
+										<td><strong>Country:</strong> United Kingdom</td>
 									  </tr>
 									  <tr>
-										<td><strong>Duration:</strong> [Start Date] - [End Date]</td>
-										<td><strong>Recipients:</strong> [Recipient Organization(s)]</td>
+										<td><strong>Project ID:</strong> UKD-UKD-S10</td>
+										<td><strong>Directable:</strong> No</td>
 									  </tr>
 									  <tr>
-										<td><strong>Science Cases:</strong> [Science Case 1], [Science Case 2]</td>
-										<td><strong>Contact:</strong> <a href="mailto:contact@example.com">contact@example.com</a></td>
+										<td><strong>Duration:</strong> 1/10/2020 - 31/3/2027</td>
+										<td><strong>Recipients:</strong> Dark Energy Science Collaboration (DESC)(primary), Transient and Variable Stars (TVS) Science Collaboration</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> Supernova cosmology, Supernova physics, and AGN reverberation mapping</td>
+										<td><strong>Contact:Mark Sullivan</strong> <br> <a href="mailto:m.sullivan@soton.ac.uk">m.sullivan@soton.ac.uk</a></td>
 									  </tr>
 									</table>
 								  </div>
 								  
 								  <div class="project-description">
-									<p>[Brief description of the project, its goals, methods, and expected outcomes. This can be 1-2 paragraphs explaining the project in more detail.]</p>
-								  </div>
-								  
-								  <div class="project-resources">
-									<strong>Resources:</strong>
-									<ul class="resources-list">
-									  <li><a href="#">[Research Paper]</a></li>
-									  <li><a href="#">[Repository]</a></li>
-									</ul>
-								  </div>
+									<div class="description-header" onclick="toggleDescription('desc-001')">
+										<h2>Project Description</h2>
+										<span class="collapse-icon">▼</span>
+									</div>
+									<div class="description-content" id="desc-001">
+										<p><strong>TiDES</strong> (Time Domain Extragalactic Survey) is a survey on the 4-metre Multi-Object Spectrograph Telescope (4MOST), focused on the spectroscopic follow-up of Rubin Observatory LSST extragalactic optical transients. We have <strong>250,000 fibre-hours</strong> of spectroscopy time available within the TiDES survey (2% of the total 4MOST fibres). With this, we expect to obtain:</p>
+	
+										<ol>
+											<li>Spectroscopic observations of &gt; 30,000 live transients to <em>i<sub>AB</sub> = 22.5</em>.</li>
+											<li>Follow up observations of &gt; 200,000 transient host galaxies to obtain redshift measurements for photometric classification and cosmological applications.</li>
+										</ol>
+
+										<p>We expect there to be between <strong>5–10 live (i &gt; 22.5 mag)</strong> extragalactic transients per 4MOST field, and we will put a fibre on all of these, effectively giving a magnitude-limited sample. </p>
+
+										<p>This project focuses on providing non-directable software development effort to ensure the <strong>maximal science return</strong> from the TiDES dataset for the Rubin Observatory science consortia. This includes using the resulting dataset for supernova cosmology in the DESC (primarily via type Ia supernovae in the Time Domain working group), and understanding supernova physics in the TVS science consortium. The project will thus support developing TiDES into a contributed dataset to DESC and TVS. </p>
+										<p> We will work closely with the DESC Time Domain Working Group to design a selection function for the LSST transient stream to optimise the type Ia SN selection (including host galaxies) for cosmology. We will implement the DESC agreed strategy within the Lasair broker to select supernovae with high-quality LSST light curves (or other measured characteristics).</p>
+									</div>
+								</div>
+								
+								<div class="project-resources">
+									<h3>Resources</h3>
+									<div class="resource-section">
+										<h4>Research Papers</h4>
+										<ul class="resources-list">
+											<li><strong>Frohmaier et al. (2025) :</strong> <em>The 4MOST Time Domain Extragalactic Survey</em>, <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250116311F/abstract">submitted to MNRAS</a></li>
+										</ul>
+									</div>
+									<div class="resource-section">
+										<h4>Related Talks</h4>
+										<ul class="resources-list">
+											<li> <a href="https://www.memsait.it/videomemorie/volume-2-2025/VIDEOMEM_2_2025.75.mp4">An Extraordinary Journey Into the Transient Sky</a></li>
+										</ul>
+									</div>
+								</div>
 								  
 								  <hr class="project-divider">
 								</div>
 							  
-								<!-- Project 2 -->
 								<div id="project-002" class="project-container">
-								  <h3 class="project-title">[Project Title 2]</h3>
+								  <h3 class="project-title">Software for analysis of variability of celestial sources</h3>
 								  
 								  <div class="contributors">
-									<strong>Contributors:</strong> [Name 1] ([Affiliation 1]), [Name 2] ([Affiliation 2]), [Name 3] ([Affiliation 3])
+									<strong>Contributors:</strong> Anđelka Kovačević (Inkind Lead, University of Belgrade), Dragana Ilic (Project Manager, University of Belgrade), Sasa Simić (University of Kragujevac, Serbia), Mladen Nikolić (University of Belgrade),  Luka Popović (Project Manager, Astronomical Observatory Belgrade, Serbia)
+								  </div>
+								  
+								
+								  <div class="project-details">
+									<table class="details-table">
+										<tr>
+										<td><strong>Lead Institution:</strong> University of Belgrade-Faculty of Mathematics</td>
+										<td><strong>Country:</strong> Serbia</td>
+									  </tr>
+									  <tr>
+										<td><strong>Project ID:</strong> SER-SAG-S1</td>
+										<td><strong>Directable:</strong> Yes</td>
+									  </tr>
+									  <tr>
+										<td><strong>Duration:</strong> <time datetime="2021-12-01">December 1, 2021</time> - <time datetime="2040-12-01">December 1, 2040</time>
+										</td>
+										<td><strong>Recipients:</strong> Active Galactic Nuclei Science Collaboration, Transient and Variable Stars Science Collaboration</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> Binary Quasar Detection, Quasar Reverberation Mapping, Rare Variability Quasar Discovery</td>
+										<td><strong>Contact:Andjelka Kovacevic, Dragana Ilic</strong> <br> <a href="mailto:andjelka.kovacevic@matf.bg.ac.rs">andjelka.kovacevic@matf.bg.ac.rs, <a href="mailto:dragana.ilic@matf.bg.ac.rs"> dragana.ilic@matf.bg.ac.rs</a></a></td>
+									  </tr>
+									</table>
+								  </div>
+
+								  <div class="project-science-cases">
+                                    <h4>Detailed Science Cases</h4>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <strong>Binary Quasar Detection:</strong> <br> The project will detect and classify binary quasars through periodicity analysis, with possible extension to star sciences cases.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Quasar Reverberation Mapping:</strong> <br> It also involves the reconstruction of quasar transfer functions and inference of SMBH physical parameters (e.g., mass, accretion properties, variability timescales), supporting reverberation mapping studies.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Rare Variability Discovery:</strong>  <br> The project also aims on the discovery of quasars with anomalous or rare variability patterns, potentially indicating microlensing, changing-look transitions.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Next-Gen Follow-up Targets:</strong> <br> The project aims to provide high-confidence targets for follow-up with next-generation observatories such as the ngEHT, LISA, and GRAVITY+, by supplying catalogs of flagged periodic/quasi-periodic sources.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="project-description">
+                                    <div class="description-header" onclick="toggleDescription('desc-002')">
+                                        <h2>Project Description</h2>
+                                        <span class="collapse-icon">▼</span>
+                                    </div>
+                                    <div class="description-content" id="desc-002">
+                                        <p>
+                                            The integrated development of Quasar Neural Process in Python (QNPy) and Quasar harmonic eXplorer (QhX) delivers a framework for the nonlinear, probabilistic analysis of quasar light curves, addressing the challenges of irregular sampling, noise, and multimodal variability in large time-domain surveys like the Vera C. Rubin LSST. QNPy combines Self-Organizing Maps (SOMs) for clustering with Attentive Latent Neural Processes to reconstruct light curves in a space-context-aware latent representation. In this latent space, Multi-Dimensional Modeling (MDM)  infers supermassive black hole (SMBH)  mass, transfer functions, and characteristic variability time scales. 
+                                        </p>
+                                        <p> 
+                                            QhX introduces a novel period–period phase space by transforming light curves using wavelets and correlating the resulting time–frequency representations.  QhX introduces a new application of the Intersection over Union (IoU) metric to statistically validate periodic detections across photometric bands, and  both numerical outputs and dynamic visualizations of detected periods, supporting robust classification of multiperiodic signals. A statistical robovetter determines the significance and confidence bounds of detected periods, producing a catalog of reliable periodic quasar candidates. This method enables the detection of complex periodic patterns via a nonlinear correlation density map. The QNPy–QhX framework is modular and interoperable, designed to operate in tandem or be combined with other pipelines and methodologies. This flexibility enables its integration into ensemble workflows for quasar classification, variability characterization, and periodicity detection.
+                                        </p>
+                                        <p>The expected outcomes include:</p>
+                                        <ol>
+                                            <li>Catalogues of binary quasar candidates suitable for follow-up by future observatories.</li>
+                                            <li>Modeled quasar light curves reconstructed with quantified uncertainties.</li>
+                                            <li>Inference of transfer functions, SMBH mass, and characteristic time scales of variability from real and simulated quasar light curves.</li>
+                                        </ol>
+                                    </div>
+                                    </div>
+
+								  
+								<div class="project-resources">
+									<h3>Resources</h3>
+									<div class="resource-section">
+										<h4>White Papers & Publications</h4>
+										<ul class="resources-list">
+											<li>
+												<strong>Raju et al (2025):</strong> <em>A Meta-Learning Framework for Multitask Reverberation Mapping in Active Galactic Nuclei</em>, submitted to A&A.
+											</li>
+											<li>
+												<strong>Kovacevic et al (2025):</strong> <em>QhX: A Python package for periodicity detection in red noise</em>, submitted to JOSS.
+											</li>
+											<li>
+												<strong>White paper - Katelyn Breivik et al. (2022):</strong> <a href="https://arxiv.org/abs/2208.02781" target="_blank" rel="noopener noreferrer">From Data to Software to Science with the Rubin Observatory LSST</a>
+											</li>
+											
+										</ul>
+									</div>
+									<div class="resource-section">
+										<h4>Repositories</h4>
+										<ul class="resources-list">
+											<li><a href="https://pypi.org/project/QhX/" target="_blank" rel="noopener noreferrer">QhX (Quasar harmonics eXplorer) – Periodicity Detection in Red Noise (PyPI)</a></li>
+											<li><a href="https://pypi.org/project/QNPy-Latte/" target="_blank" rel="noopener noreferrer">QNPy-Latte (Latent ATTEntive Neural Processes for Quasar Light Curves with parametric recovery) – A QN Analysis Toolkit (PyPI)</a></li>
+											<li><a href="https://pypi.org/project/QNPy/" target="_blank" rel="noopener noreferrer">QNPy (Modeling Quasar time series with Neural processes in Python) – Core QN Toolkit (PyPI)</a></li>
+											<li><a href="https://github.com/LSST-SER-SAG-S1" target="_blank" rel="noopener noreferrer">LSST-SER-SAG-S1 – GitHub Repository</a></li>
+										</ul>
+									</div>
+									<div class="resource-section">
+										<h4>Related Talks</h4>
+										<ul class="resources-list">
+											<li><a href="http://ser-sag.pmf.kg.ac.rs:8080/share.cgi?ssid=4fe292f9194142e39f2ec78f68ddd8ca" target="_blank" rel="noopener noreferrer">Demo Session Recordings</a></li>
+											<li><a href="https://www.youtube.com/watch?v=HUTXLKxfCEM" target="_blank" rel="noopener noreferrer">Talks at TVS Software Workshops (YouTube)</a></li>
+											<li><a href="https://www.youtube.com/watch?v=AUMDm5kbVHU&list=PLPINAcUH0dXZ5sz7oe_kGdJnaaNgxIF5z&index=33" target="_blank" rel="noopener noreferrer">Rubin Bytes 3: Exploring LSST Software and Tools (YouTube)</a></li>
+										</ul>
+									</div>
+								</div>
+								  
+								  <hr class="project-divider">
+								</div>
+							  
+								<div id="project-003" class="project-container">
+								  <h3 class="project-title">Machine Learning Classification of Periodic Variable Stars</h3>
+								  
+								  <div class="contributors">
+									<strong>Contributors:</strong> Robert Szabo (HUN-REN CSFK, Konkoly Observatory), Tamás Szklenár (HUN-REN CSFK, Konkoly Observatory), Attila Bódi (HUN-REN CSFK, Konkoly Observatory)
 								  </div>
 								  
 								  <div class="project-details">
 									<table class="details-table">
 									  <tr>
-										<td><strong>Project ID:</strong> [ID-CODE-002]</td>
-										<td><strong>Directable:</strong> [Yes/No]</td>
+										<td><strong>Lead Institution:</strong> HUN-REN CSFK, Konkoly Observatory</td>
+										<td><strong>Country:</strong> Hungary</td>
 									  </tr>
 									  <tr>
-										<td><strong>Duration:</strong> [Start Date] - [End Date]</td>
-										<td><strong>Recipients:</strong> [Recipient Organization(s)]</td>
+										<td><strong>Project ID:</strong> HUN-KON-S2</td>
+										<td><strong>Directable:</strong> Yes</td>
 									  </tr>
 									  <tr>
-										<td><strong>Science Cases:</strong> [Science Case 1], [Science Case 3]</td>
-										<td><strong>Contact:</strong> <a href="mailto:contact@example.com">contact@example.com</a></td>
+										<td><strong>Duration:</strong> <time datetime="2022-06-01">June 1, 2022</time> - <time datetime="2035-01-01">January 1, 2035</time></td>
+										<td><strong>Recipients:</strong> Transient and Variable Stars Science Collaboration, Stars, Milky Way, and Local Volume (SMWLV) Science Collaboration</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> Variable Stars, RR Lyrae, Cepheids, Young Stellar Objects, Eclipsing Binaries</td>
+										<td><strong>Contact:Robert Szabo</strong> <br> <a href="mailto:szabo.robert@csfk.org">szabo.robert@csfk.org</a></td>
+									  </tr>
+									</table>
+								  </div>
+
+								<div class="project-science-cases">
+								<h4>Detailed Science Cases</h4>
+								<ul>
+									<li>
+										<p>
+											<strong>Machine-Learning-Based Variable Star Classification:</strong> <br>
+											A robust classifier using LSST multicolor photometry and external datasets will assign probabilistic classifications of variable star types. This enables targeted science across the TVS and SMWLV collaborations and forms the foundation for all subsequent science cases.
+										</p>
+									</li>
+									<li>
+										<p>
+											<strong>High-Purity RR Lyrae Selection for Blazhko Effect Studies:</strong> <br>
+											SMWLV members require a "pure list" of RR Lyrae stars classified with &gt; 95% probability and brighter than 22 mag in the g band to investigate the incidence and properties of the Blazhko effect using a clean and statistically reliable sample.
+										</p>
+									</li>
+									<li>
+										<p>
+											<strong>RR Lyrae-Based Halo Substructure Mapping:</strong> <br>
+											A more inclusive "full list" of RR Lyrae stars with &gt; 80% classification probability will allow the identification of faint tidal streams and other substructures in the Galactic halo and beyond, extending the reach of Milky Way mapping efforts.
+										</p>
+									</li>
+									<li>
+										<p>
+											<strong>Fundamental-Mode Classical Cepheids for y-Band Period-Luminosity Relation:</strong> <br>
+											TVS members will use LSST light curves of classical Cepheids pulsating in the fundamental mode, classified with &gt; 90% probability, to test and refine period-luminosity relations, with a particular focus on the y-band where data is currently lacking.
+										</p>
+									</li>
+									<li>
+										<p>
+											<strong>LSST-Based Young Stellar Object Identification:</strong> <br>
+											Classification of young stellar objects (YSOs) based on LSST multicolor light curves will help TVS members optimally plan and schedule follow-up observations, targeting variability from accretion processes and circumstellar disks.
+										</p>
+									</li>
+									<li>
+										<p>
+											<strong>Eclipsing Binary Characterization for Population Synthesis:</strong> <br>
+											A curated list of eclipsing binaries with orbital periods between 1 and 100 days will be used to test population synthesis models, offering insights into binary formation, evolution, and statistical properties across the Milky Way.
+										</p>
+									</li>
+									<li>
+										<p>
+											<strong>Discovery and Analysis of Periodic Variable Star Populations:</strong> <br>
+											Beyond specific subclasses, the classifier will support the discovery and analysis of periodic variable stars including long-period variables, SX Phoenicis, anomalous Cepheids, and more, enabling a wide range of stellar evolution studies.
+										</p>
+									</li>
+								</ul>
+								</div>
+												
+								  <div class="project-description">
+									<div class="description-header" onclick="toggleDescription('desc-003')">
+										<h2>Project Description</h2>
+										<span class="collapse-icon">▼</span>
+									</div>
+									<div class="description-content" id="desc-003">
+										<p>We proposed the development of a machine-learning based classification pipeline to incrementally improve classification of periodic variable sources with LSST multicolor light curves as more and more data are coming in during the 10-yr main survey. Since a monolithic classifier would not be able to meet the output purity requirements we propose an iterative modular system with different modules tuned for classification of specific transients and variable stars. We would take advantage of the fact that some of the modules may already be in development in other LSST Science Collaborations and incorporate these when possible in the proposed pipeline. The pipeline will be primarily based on LSST multicolor lightcurves, but would also take advantage of other LSST data products where possible (e.g. real/bogus brokers) as well as data from other surveys.</p>
+									</div>
+								  </div>
+								  
+								  <div class="project-resources">
+									<h3>Resources</h3>
+									<div class="resource-section">
+										<h4>Research Papers</h4>
+										<ul class="resources-list">
+										  <li><strong>Szklenár et al. (2022):</strong><em>Variable Star Classification with a Multiple-input Neural Network</em>, <a href="https://doi.org/10.3847/1538-4357/ac8df3" target="_blank" rel="noopener noreferrer">  ApJ, 938(1), 37.</a></li>
+										  <li><strong>Szklenár et al. (2020):</strong><em>Image-based Classification of Variable Stars: First Results from Optical Gravitational Lensing Experiment Data</em>, <a href="https://doi.org/10.3847/2041-8213/ab9ca4" target="_blank" rel="noopener noreferrer">  ApJL, 897(1), L12.</a></li>
+										</ul>
+									</div>
+									<div class="resource-section">
+										<h4>Repositories</h4>
+										<ul class="resources-list">
+											<li><a href="https://kik.konkoly.hu/data_en.html#ML">CNN training and weight files</a></li>
+										</ul>
+									</div>
+									<div class="resource-section">
+										<h4>Related Talks</h4>
+										<ul class="resources-list">
+											<li><a href="https://www.youtube.com/watch?v=1cAHHjAM0wc&t=1140s&ab_channel=RubinLSSTTVSScienceCollaboration">Multicolor LSST variable star classification with neural networks, and more ...</a></li>
+										</ul>
+									</div>
+								  </div>
+							  
+								<hr class="project-divider">
+								</div>
+							  
+								<div id="project-004" class="project-container">
+								  <h3 class="project-title">Target and Observations Management (TOM) system Development in the LSST TVS Science Collaboration</h3>
+								  
+								  <div class="contributors">
+									<strong>Contributors:</strong> Dr. Markus Hundertmark (Heidelberg University), Dr. Yiannis Tsapras (Heidelberg University)
+
+								  </div>
+								  
+								  <div class="project-details">
+									<table class="details-table">
+									  <tr>
+										<td><strong>Lead Institution:</strong> Heidelberg University</td>
+										<td><strong>Country:</strong> Germany</td>
+									  </tr>
+									  <tr>
+										<td><strong>Project ID:</strong> GER-ARI-S1</td>
+										<td><strong>Directable:</strong> Yes</td>
+									  </tr>
+									  <tr>
+										<td><strong>Duration:</strong> <time datetime="2021-10-01">October 1, 2021</time> - <time datetime="2035-09-30">September 30, 2035</time></td>
+										<td><strong>Recipients:</strong> Transient and Variable Stars Science Collaboration</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> Microlensing, TVS Science Cases</td>
+										<td><strong>Contact: Dr. Yiannis Tsapras</strong> <br> <a href="mailto:ytsapras@ari.uni-heidelberg.de">ytsapras@ari.uni-heidelberg.de</a></td>
 									  </tr>
 									</table>
 								  </div>
 								  
+								  	<div class="project-science-cases">
+                                    <h4>Detailed Science Cases</h4>
+                                    <ul>
+                                        <li>
+											<p>
+												<strong>Web-Based Target and Observing System for TVS:</strong> <br>
+												A flexible web-based target and observing system will be developed to serve the needs of various TVS science cases. The project includes the development of two demonstration implementations in collaboration with TVS members and subgroups. The first implementation is already in progress in partnership with the Microlensing TVS subgroup, supporting streamlined target selection and follow-up coordination.
+											</p>
+										</li>
+                                    </ul>
+                                    </div>
 								  <div class="project-description">
-									<p>[Brief description of the project, its goals, methods, and expected outcomes. This can be 1-2 paragraphs explaining the project in more detail.]</p>
+									<div class="description-header" onclick="toggleDescription('desc-004')">
+										<h2>Project Description</h2>
+										<span class="collapse-icon">▼</span>
+									</div>
+									<div class="description-content" id="desc-004">
+										<p>The product to be developed is a Target and Observing Program Management system web-service that will allow TVS members to manage and track active observing programs. The system will be designed to handle observing request management, alert tracking and data administration.</p>
+									</div>
 								  </div>
 								  
 								  <div class="project-resources">
-									<strong>Resources:</strong>
-									<ul class="resources-list">
-									  <li><a href="#">[Technical Documentation]</a></li>
-									  <li><a href="#">[Repository]</a></li>
-									</ul>
+									<h3>Resources</h3>
+									<div class="resource-section">
+										<h4>Related Talks</h4>
+										<ul class="resources-list">
+									   		<li><a href="https://youtu.be/1cAHHjAM0wc?si=QO8GJuCsrfjQYmST&t=2667">Update on the microlensing OPM</a></li>
+										</ul>
+									</div>
 								  </div>
 								  
 								  <hr class="project-divider">
 								</div>
 							  
-								<!-- Project 3 -->
-								<div id="project-003" class="project-container">
-								  <h3 class="project-title">[Project Title 3]</h3>
+								<div id="project-005" class="project-container">
+								  <h3 class="project-title">Software Tools for Stellar Populations in Crowded Fields</h3>
 								  
 								  <div class="contributors">
-									<strong>Contributors:</strong> [Name 1] ([Affiliation 1]), [Name 2] ([Affiliation 2]), [Name 3] ([Affiliation 3])
+									<strong>Contributors:</strong> M. Dall'Ora (INAF-OACN), G. Bono (Univ. Tor Vergata Rome), M. Di Criscienzo (INAF-OAR), G. Fiorentino (INAF-OAR), I. Musella (INAF-OACN), M. Gholami (INAF-OACN), J. Carvajal (INAF-OACN)
 								  </div>
 								  
 								  <div class="project-details">
 									<table class="details-table">
 									  <tr>
-										<td><strong>Project ID:</strong> [ID-CODE-003]</td>
-										<td><strong>Directable:</strong> [Yes/No]</td>
+										<td><strong>Lead Institution:</strong> Italian National Institute for Astrophysics (INAF)</td>
+										<td><strong>Country:</strong> Italy</td>
 									  </tr>
 									  <tr>
-										<td><strong>Duration:</strong> [Start Date] - [End Date]</td>
-										<td><strong>Recipients:</strong> [Recipient Organization(s)]</td>
+										<td><strong>Project ID:</strong> ITA-INAF-S10</td>
+										<td><strong>Directable:</strong> Yes</td>
 									  </tr>
 									  <tr>
-										<td><strong>Science Cases:</strong> [Science Case 2]</td>
-										<td><strong>Contact:</strong> <a href="mailto:contact@example.com">contact@example.com</a></td>
+										<td><strong>Duration:</strong> <time datetime="2024-10-01">October 1, 2024</time> - <time datetime="2028-09-30">September 30, 2028</time></td></td>
+										<td><strong>Recipients:</strong> Transient and Variable Stars Science Collaboration, Stars, Milky Way, and Local Volume Science Collaboration</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> 3D Age, metallicity and reddening mapping of the Galactic Bulge with RR Lyrae stars, Galactic Bulge pulsating variables census</td>
+										<td><strong>Contact:Massimo Dall'Ora</strong> <br><a href="mailto:massimo.dallora@inaf.it">massimo.dallora@inaf.it</a></td>
 									  </tr>
 									</table>
 								  </div>
 								  
 								  <div class="project-description">
-									<p>[Brief description of the project, its goals, methods, and expected outcomes. This can be 1-2 paragraphs explaining the project in more detail.]</p>
+									<div class="description-header" onclick="toggleDescription('desc-005')">
+										<h2>Project Description</h2>
+										<span class="collapse-icon">▼</span>
+									</div>
+									<div class="description-content" id="desc-005">
+										<p>
+										We propose to work within the Crowded Fields Working Group, and in agreement with the SMWLV and TVS Science Collaborations, in the framework of Directable Software, to implement a series of tools focused on obtaining accurate photometry in crowded fields.
+										</p>
+										
+										<p>
+										As a proposed example, we mention our experience in the P.B. Stetson’s ALLFRAME code, which simultaneously fits a master star list on a set of images, cross-correlating fluxes (in different passbands) and positions. This approach allows for enhanced accuracy of the photometry, especially at the faint end of the brightness range. We are available to test this approach and other approaches developed to deal with the LSST data, according to the directable nature of our proposed contribution. In general, we are keen to contribute with specific FTEs and our experience on this matter.
+										</p>
+										
+										<p>
+										INAF plans to provide directable software effort, using INAF-secured funding, at the level of 0.8 FTE per year for 4 years, starting in FY25. This effort will initially come from a senior postdoc (to be hired) who has software engineering skills and a stellar photometry background, supported by our experienced scientists at a lower (but still dedicated) effort level.
+										</p>
+										
+										<p>
+										Deliverable products include: 
+										<strong>(i)</strong> software development for PSF-based reduction of crowded fields. The software will be made available to the Community, starting from its development phase, and fully documented and maintained;
+										<strong>(ii)</strong> photometric catalogs, produced by the aforementioned software. They will be immediately delivered to the Community, before further analysis takes place, in order to avoid any perceived advantage in the subsequent scientific analysis. Software development will take place in collaboration and agreement with the interested Science Collaborations.
+										</p>
+										
+										<p>
+										On-demand PSF photometry reduction of selected areas is under evaluation.
+										</p>
+									</div>
+								  </div>
+								
+								  <hr class="project-divider">
+								</div>
+							  
+								<div id="project-006" class="project-container">
+								  <h3 class="project-title">Tools for the simulation of Pulsating Stars</h3>
+								  
+								  <div class="contributors">
+									<strong>Contributors:</strong> Ilaria Musella (INAF-Astronomical Observatory of Capodimonte (Naples)), Marcella Marconi (INAF-Astronomical Observatory of Capodimonte (Naples)), Massimiliano Gatto (INAF-Astronomical Observatory of Capodimonte (Naples))
+								  </div>
+								  
+								  <div class="project-details">
+									<table class="details-table">
+									  <tr>
+										<td><strong>Lead Institution:</strong> Italian National Institute for Astrophysics (INAF) Astronomical Observatory of Capodimonte (Naples)</td>
+										<td><strong>Country:</strong> Italy</td>
+									  </tr>
+									  <tr>
+										<td><strong>Project ID:</strong> ITA-INA-S8</td>
+										<td><strong>Directable:</strong> Yes</td>
+									  </tr>
+									  <tr>
+										<td><strong>Duration:</strong> <time datetime="2025-06-01">June 1, 2025</time> - <time datetime="2027-05-31">May 31, 2027</time></td>
+										<td><strong>Recipients:</strong> Transient and Variable Stars Science Collaboration, Stars, Milky Way, and Local Volume Science Collaboration</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> Pulsating star evolution modeling, Synthetic light curves for classification, Variable stars as distance indicators, Light curve fitting for stellar parameters, Pulsators as population tracers</td>
+										<td><strong>Contact:Ilaria Musella</strong> <br> <a href="mailto:ilaria.musella@inaf.it">ilaria.musella@inaf.it</a></td>
+									  </tr>
+									</table>
+								  </div>
+								  
+								  <div class="project-science-cases">
+									<h4>Detailed Science Cases</h4>
+									<ul>
+										<li>
+											<p>
+												<strong>Theoretical Framework for Pulsating Stars:</strong> <br>
+												To develop an extensive and detailed theoretical scenario for pulsating stars in different evolutionary phases and for a wide range of physical and chemical properties, representatives of observed variable stars in different Galactic and extragalactic environments and their application to observational data.
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>LSST Pulsating Star Simulations:</strong> <br>
+												The simulation of LSST pulsating stars of various classes will be useful for classification and characterization purposes, including training machine learning classification systems.
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>Variable Stars as Population Tracers:</strong> <br>
+												To use variable stars as population tracers and distance indicators.
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>Light Curve Fitting for Stellar Parameters:</strong> <br>
+												To use the light curve fitting method based on theoretical pulsating models to derive the stellar intrinsic parameters (M, L, Te) of the observed variables and on their distance and reddening.
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>Astrophysical Constraints from Pulsating Stars:</strong> <br>
+												To get constraints on the
+											</p>
+										</li>
+									</ul>
+								</div>
+
+								  <div class="project-description">
+									<div class="description-header" onclick="toggleDescription('desc-006')">
+										<h2>Project Description</h2>
+										<span class="collapse-icon">▼</span>
+									</div>
+									<div class="description-content" id="desc-006">
+									   <p>We propose the development of an infrastructure based on extended model sets along with software tools to interpolate among grids of theoretical templates (e.g., light and radial velocity curves, periods, mean magnitudes, colors, etc.) for pulsating variables. The fundamental aims are:</p>
+										<ul>
+										<li>
+											To train the developed tools and infrastructure on the extended and detailed model grids for several classes of pulsating stars built by our team.
+										</li>
+										<li>
+											To extend the same tools and infrastructure to theoretical LSST pulsating star templates developed by other teams and under the supervision of the TVS Scientific Collaboration.
+										</li>
+										</ul>
+										The implementation will be based on the following components:
+										<ul>
+										<li>
+											Web page access to import and export different empirical and/or theoretical light curve databases for different classes of intrinsic variable stars.
+										</li>
+										<li>
+											Interactive software tools to interpolate within the databases and derive the properties of light curves and the associated stellar parameters.
+										</li>
+										<li>
+											Interactive software tools to simulate LSST variable stars starting from empirical or theoretical light curve templates.
+										</li>
+										</ul>
+									</div>
 								  </div>
 								  
 								  <div class="project-resources">
-									<strong>Resources:</strong>
-									<ul class="resources-list">
-									  <li><a href="#">[Publication]</a></li>
-									  <li><a href="#">[Database]</a></li>
-									</ul>
+									<h3>Resources</h3>
+									<div class="resource-section">
+										<h4>Research Papers</h4>
+										<ul class="resources-list" style="text-align: justify;">
+											<li>
+											<strong>Marconi et al. (2024):</strong> 
+											<em>The Hertzsprung progression of classical Cepheids in the Gaia era</em>, 
+											<a href="https://doi.org/10.1093/mnras/stae734" target="_blank" rel="noopener noreferrer">
+												MNRAS, 529(4), 4210.
+											</a>
+											</li>
+											<li>
+											<strong>De Somma et al. (2024):</strong> 
+											<em>Classical Cepheid pulsation properties in the Rubin-LSST filters</em>, 
+											<a href="https://doi.org/10.1093/mnras/stae450" target="_blank" rel="noopener noreferrer">
+												MNRAS, 528(4), 6637.
+											</a>
+											</li>
+											<li>
+											<strong>Marconi et al. (2022):</strong> 
+											<em>New Theoretical Period-Luminosity-Metallicity Relations for RR Lyrae in the Rubin-LSST Filters</em>, 
+											<a href="https://doi.org/10.3847/1538-4357/ac78ee" target="_blank" rel="noopener noreferrer">
+												ApJ, 934(1), 29.
+											</a>
+											</li>
+											<li>
+											<strong>Ragosta et al. (2019):</strong> 
+											<em>The VMC survey - XXXV. Model fitting of LMC Cepheid light curves</em>, 
+											<a href="https://doi.org/10.1093/mnras/stz2881" target="_blank" rel="noopener noreferrer">
+												MNRAS, 490(4), 4975.
+											</a>
+											</li>
+										</ul>
+									</div>
 								  </div>
 								</div>
-							  
-								<footer class="major">
-								  <ul class="actions special">
-									<li><a href="all-contributions.html" class="button">View All Contributions</a></li>
-								  </ul>
-								</footer>
+
+								<div id="project-007" class="project-container">
+								  <h3 class="project-title">Tools for classification, full characterization and validation of variable sources</h3>
+								  
+								  <div class="contributors">
+									<strong>Contributors:</strong> Gisella Clementini, Vincenzo Ripepi, Lorenzo Monti, Tatiana Muraveva, Alessia Garofalo, Massimiliano Gatto
+								  </div>
+								  
+								  <div class="project-details">
+									<table class="details-table">
+									  <tr>
+										<td><strong>Lead Institution:</strong> Italian National Institute for Astrophysics (INAF)</td>
+										<td><strong>Country:</strong> Italy</td>
+									  </tr>
+									  <tr>
+										<td><strong>Project ID:</strong> ITA-INA-S15</td>
+										<td><strong>Directable:</strong> Yes</td>
+									  </tr>
+									  <tr>
+										<td><strong>Duration:</strong> <time datetime="2024-10-01">October 1, 2024</time> - <time datetime="2026-09-30">September 30, 2026</time></td>
+										<td><strong>Recipients:</strong> Transient and Variable Stars Science Collaboration</td>
+									  </tr>
+									  <tr>
+										<td><strong>Science Cases:</strong> Variable Stars, Cepheids, RR Lyrae stars</td>
+										<td><strong>Contact: Gisella Clementini</strong> <br> <a href="mailto:gisella.clementini@inaf.it">gisella.clementini@inaf.it</a></td>
+									  </tr>
+									</table>
+								  </div>
+								  
+								  	<div class="project-science-cases">
+                                    <h4>Detailed Science Cases</h4>
+                                    <ul>
+                                        <li>
+											<p>
+												<strong>Tools for Identification and Validation of LSST Variable Sources:</strong> <br>
+												By exploiting catalogues of variable sources and pipelines that we have developed as team charged with the specific processing of RR Lyrae stars and Cepheids observed by Gaia, we will contribute an architecture and specific tools for the identification, classification and validation of variable sources observed by the LSST.
+											</p>
+										</li>
+                                    </ul>
+                                    </div>
+								  <div class="project-description">
+									<div class="description-header" onclick="toggleDescription('desc-007')">
+										<h2>Project Description</h2>
+										<span class="collapse-icon">▼</span>
+									</div>
+									<div class="description-content" id="desc-007">
+										<p>
+										Catalogues of variable sources of different types will be used to:
+										</p>
+										<ol>
+										<li>
+											Intercalibrate the LSST and Gaia datasets using both variable and constant stars within the reach of Gaia and not yet saturated in the LSST.
+										</li>
+										<li>
+											Build training sets for the classification of variable sources observed by LSST.
+										</li>
+										<li>
+											Optimally translate into the LSST passbands the different diagnostic tools developed as part of Coordination Unit 7 (variability) in the Gaia Data Processing and Analysis Consortium (DPAC).
+										</li>
+										<li>
+											Develop and fine-tune various Machine Learning and Deep Learning models for the processing and characterization of RR Lyrae stars and Cepheids.
+										</li>
+										</ol>
+									</div>
+								</div>
+
+							  <div id="project-008" class="project-container">
+								  <h3 class="project-title">Cross matching at LSST depths</h3>
+								  
+								<div class="contributors">
+										<strong>Contributors:</strong> Tom J. Wilson (Exeter), Tim Naylor (Exeter), UK DAC Team (Edinburgh).
+									</div>
+									
+									<div class="project-details">
+										<table class="details-table">
+										<tr>
+											<td><strong>Lead Institution:</strong> University of Exeter</td>
+											<td><strong>Country:</strong> United Kingdom</td>
+										</tr>
+										<tr>
+											<td><strong>Project ID:</strong> UKD-UKD-S9</td>
+											<td><strong>Directable:</strong> No</td>
+										</tr>
+										<tr>
+											<td><strong>Duration:</strong> <time datetime="2019-12-02">December 2, 2019</time> - <time datetime="2025-11-26">November 26, 2025</time></td>
+											<td><strong>Recipients:</strong> Transient and Variable Stars Science Collaboration, Stars, Milky Way, and Local Volume Science Collaboration</td>
+										</tr>
+										<tr>
+											<td><strong>Science Cases:</strong> LSST counterparts in other surveys</td>
+											<td><strong>Contact: Tim Naylor</strong> <br> <a href="mailto:tim.naylor@exeter.ac.uk">tim.naylor@exeter.ac.uk</a></td>
+										</tr>
+										</table>
+									</div>
+									
+
+									<div class="project-description">
+										<div class="description-header" onclick="toggleDescription('desc-008')">
+											<h2>Project Description</h2>
+											<span class="collapse-icon">▼</span>
+										</div>
+										<div class="description-content" id="desc-008">
+											<p>
+											LSST catalogues will be so crowded (even far from the Galactic Plane) that standard algorithms for cross-matching with other surveys will fail. Hence, we will provide (through the UK DAC) a service using state-of-the-art cross-matching algorithms that account for the effects of crowding and partially mitigate them.
+											</p>
+											<p>
+											We will offer matches with a wide range of surveys such as VISTA, VPHAS, WISE, and Spitzer, and we will make the software publicly available.
+											</p>
+											<p>
+											Each match will include a probability reflecting the following:
+											</p>
+											<ol>
+											<li>
+												The separation of the counterparts and their associated uncertainties in position.
+											</li>
+											<li>
+												The effects of crowding on the accuracy of the catalogue positions.
+											</li>
+											<li>
+												The density of field stars.
+											</li>
+											<li>
+												Optionally, the magnitude of the potential counterpart in comparison to field stars and other counterpart pairs.
+											</li>
+											</ol>
+											<p>
+											We will also provide estimates of the effects of crowding on the photometry.
+											</p>
+										</div>
+									</div>
+
+									<div class="project-resources">
+										<h3>Resources</h3>
+										<div class="resource-section">
+											<h4>Research Papers</h4>
+											<ul class="resources-list" style="text-align: justify;">
+												<li>
+													<strong>Wang et al. (2023):</strong>  
+													<em>A quality assurance system for Rubin Observatory LSST alert production</em>,  
+													<a href="https://ui.adsabs.harvard.edu/abs/2023RASTI...2....1W/abstract" target="_blank" rel="noopener noreferrer">
+														RASTI, 2, 1.
+													</a>
+												</li>
+												<li>
+													<strong>Wang et al. (2022):</strong>  
+													<em>Previewing the Rubin Observatory LSST Prompt Products Database Schema</em>,  
+													<a href="https://ui.adsabs.harvard.edu/abs/2022RNAAS...6...60W/abstract" target="_blank" rel="noopener noreferrer">
+														RNAAS, 6, 60.
+													</a>
+												</li>
+												<li>
+													<strong>Wang et al. (2018a):</strong>  
+													<em>Optimal transient discovery strategies with ZTF</em>,  
+													<a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.481.2148W/abstract" target="_blank" rel="noopener noreferrer">
+														MNRAS, 481, 2148.
+													</a>
+												</li>
+												<li>
+													<strong>Wang et al. (2018b):</strong>  
+													<em>Optimizing photometric variability searches</em>,  
+													<a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.473.5570W/abstract" target="_blank" rel="noopener noreferrer">
+														MNRAS, 473, 5570.
+													</a>
+												</li>
+												<li>
+													<strong>Wang et al. (2017):</strong>  
+													<em>Real-time detection of anomalous astronomical light curves with machine learning</em>,  
+													<a href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.468.2517W/abstract" target="_blank" rel="noopener noreferrer">
+														MNRAS, 468, 2517.
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="resource-section">
+										<h4>Repositories</h4>
+										<ul class="resources-list">
+											<li><a href="https://github.com/macauff/macauff">Matching Across Catalogues using the Astrometric Uncertainty Function and Flux (macauff) - Github Repository</a></li>
+										</ul>
+									</div>
+									</div>
+								<hr class="project-divider">
+								</div>
+
+								<div id="project-009" class="project-container">
+								  <h3 class="project-title">AGN catalogs for transient science</h3>
+								  
+								<div class="contributors">
+										<strong>Contributors:</strong> Janis Necker (Leiden Observatory)
+									</div>
+									
+									<div class="project-details">
+										<table class="details-table">
+										<tr>
+											<td><strong>Lead Institution:</strong> Leiden Observatory</td>
+											<td><strong>Country:</strong> Netherlands</td>
+										</tr>
+										<tr>
+											<td><strong>Project ID:</strong> NED-UTR-S5</td>
+											<td><strong>Directable:</strong> No</td>
+										</tr>
+										<tr>
+											<td><strong>Duration:</strong> <time datetime="2025-09-01">September 1, 2025</time> - <time datetime="2028-09-01">September 1, 2028</time></td>
+											<td><strong>Recipients:</strong> Transient and Variable Stars Science Collaboration</td>
+										</tr>
+										<tr>
+											<td><strong>Science Cases:</strong> TDEs, SNe, CL AGN and other AGN flares, other extragalactic transients</td>
+											<td><strong>Contact: Dr. Sjoert van Velzen</strong> <br> <a href="mailto:sjoert@strw.leidenuniv.nl">sjoert@strw.leidenuniv.nl</a></td>
+										</tr>
+										</table>
+									</div>
+									<div class="project-description">
+										<div class="description-header" onclick="toggleDescription('desc-009')">
+											<h2>Project Description</h2>
+											<span class="collapse-icon">▼</span>
+										</div>
+										<div class="description-content" id="desc-009">
+											<p>
+												This contribution has two parts:
+											</p>
+											<ol>
+												<li>We will make a catalog of known Active Galactic Nuclei in the Rubin footprint.</li>
+												<li>We will help to identify Active Galactic Nuclei in the Rubin forced photometry data.</li>
+											</ol>
+										</div>
+									</div>	
 							  </section>
 
-								<section id="second" class="main special">
-									<header class="major">
-									  <h2>Workshop Resources</h2>
-									  <p>Access recordings from our previous workshops and training sessions</p>
-									</header>
-									
-									<section id="video-playlists">
-									  <h2>YouTube Playlists for Previous Workshops</h2>
-									  
-									  <div class="playlist-grid">
-										<div class="playlist-item">
-										  <h3>TVS Software Workshop 3</h3>
-										  <div class="video-container">
-											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnMZx0l2P7dfgto_EI-7IKC9" 
-											  title="TVS Software Workshop 3" 
-											  frameborder="0" 
-											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-											  allowfullscreen>
-											</iframe>
-										  </div>
-										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnMZx0l2P7dfgto_EI-7IKC9" class="button small">View Full Playlist</a></p>
-										</div>
-										
-										<div class="playlist-item">
-										  <h3>TVS Software Carpentry Workshop 2</h3>
-										  <div class="video-container">
-											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnO9e0CSWZRu3tDMpL2qwVGG" 
-											  title="TVS Software Carpentry Workshop 2" 
-											  frameborder="0" 
-											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-											  allowfullscreen>
-											</iframe>
-										  </div>
-										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnO9e0CSWZRu3tDMpL2qwVGG" class="button small">View Full Playlist</a></p>
-										</div>
+						<section id="second" class="main special">
+						<header class="major">
+							<h2>Workshop Resources</h2>
+							<p>Access recordings from our previous workshops and training sessions</p>
+						</header>
 
-										<div class="playlist-item">
-										  <h3>TVS Software Workshop 2</h3>
-										  <div class="video-container">
-											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnP__1wMBeUcXTvk_F50kkxC" 
-											  title="TVS Software Workshop 2" 
-											  frameborder="0" 
-											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-											  allowfullscreen>
-											</iframe>
-										  </div>
-										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnP__1wMBeUcXTvk_F50kkxC" class="button small">View Full Playlist</a></p>
-										</div>
-										
-										<div class="playlist-item">
-										  <h3>TVS Software Workshop 1</h3>
-										  <div class="video-container">
-											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnP0KeNdzvIbUU0GcfCm5udu" 
-											  title="TVS Software Workshop 1" 
-											  frameborder="0" 
-											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-											  allowfullscreen>
-											</iframe>
-										  </div>
-										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnP0KeNdzvIbUU0GcfCm5udu" class="button small">View Full Playlist</a></p>
-										</div>
-										
-										<div class="playlist-item">
-										  <h3>Intermediate Python Development Course</h3>
-										  <div class="video-container">
-											<iframe width="560" height="315" 
-											  src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnP8Nu7HxcQae3YPSq1PAc6d" 
-											  title="Intermediate Python Development Course" 
-											  frameborder="0" 
-											  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-											  allowfullscreen>
-											</iframe>
-										  </div>
-										  <p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnP8Nu7HxcQae3YPSq1PAc6d" class="button small">View Full Playlist</a></p>
-										</div>
-									  </div>
-									</section>
-								
+						<section id="video-playlists">
+							<h2>YouTube Playlists for Previous Workshops</h2>
+							<div class="playlist-grid">
 
-						<!-- Get Started -->
-						<section id="cta" class="main special">
-							<header class="major">
-							  <h2>Science Cases</h2>
-							  <p>Detailed descriptions of research focus areas supported by our in-kind contributors</p>
-							</header>
-							
-							<div class="science-cases">
-							  <!-- Science Case Group 1 -->
-							  <div class="science-case-group">
-								<h3>Transients and Variable Stars</h3>
-								
-								<div class="science-case">
-								  <h4 id="particle-physics">[Science Case 1]</h4>
-								  <p><strong>Summary:</strong> [Brief one-sentence summary of this science case]</p>
-								  <p>[Detailed description of the science case, including its significance, methodologies, challenges, and potential impacts. This paragraph should explain the core scientific questions being addressed and why they matter to the broader scientific community.]</p>
-								  <p>[Additional information about related projects, technologies, or techniques being employed in this research area. This can include specific equipment, computational approaches, or theoretical frameworks.]</p>
-								  <p><strong>Related Contributors:</strong> [Contributor Type 1], [Contributor Type 3]</p>
+							<div class="video-item">
+								<h3>TVS Software Workshop 4</h3>
+								<div class="video-container">
+								<iframe width="560" height="315"
+									src="https://www.youtube.com/embed/1cAHHjAM0wc"
+									title="TVS Software Workshop 4"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen>
+								</iframe>
 								</div>
-								
-								<div class="science-case">
-								  <h4 id="astrophysics">[Science Case 2]</h4>
-								  <p><strong>Summary:</strong> [Brief one-sentence summary of this science case]</p>
-								  <p>[Detailed description of the science case, including its significance, methodologies, challenges, and potential impacts. This paragraph should explain the core scientific questions being addressed and why they matter to the broader scientific community.]</p>
-								  <p>[Additional information about related projects, technologies, or techniques being employed in this research area. This can include specific equipment, computational approaches, or theoretical frameworks.]</p>
-								  <p><strong>Related Contributors:</strong> [Contributor Type 1]</p>
-								</div>
-								
-								<div class="science-case">
-								  <h4 id="detector-physics">[Science Case 3]</h4>
-								  <p><strong>Summary:</strong> [Brief one-sentence summary of this science case]</p>
-								  <p>[Detailed description of the science case, including its significance, methodologies, challenges, and potential impacts. This paragraph should explain the core scientific questions being addressed and why they matter to the broader scientific community.]</p>
-								  <p>[Additional information about related projects, technologies, or techniques being employed in this research area. This can include specific equipment, computational approaches, or theoretical frameworks.]</p>
-								  <p><strong>Related Contributors:</strong> [Contributor Type 3]</p>
-								</div>
-							  </div>
-							  
-							  <!-- Science Case Group 2 -->
-							  <div class="science-case-group">
-								<h3>Solar System Science</h3>
-								
-								<div class="science-case">
-								  <h4 id="data-science">[Science Case 4]</h4>
-								  <p><strong>Summary:</strong> [Brief one-sentence summary of this science case]</p>
-								  <p>[Detailed description of the science case, including its significance, methodologies, challenges, and potential impacts. This paragraph should explain the core scientific questions being addressed and why they matter to the broader scientific community.]</p>
-								  <p>[Additional information about related projects, technologies, or techniques being employed in this research area. This can include specific equipment, computational approaches, or theoretical frameworks.]</p>
-								  <p><strong>Related Contributors:</strong> [Contributor Type 2]</p>
-								</div>
-								
-								<div class="science-case">
-								  <h4 id="high-performance-computing">[Science Case 5]</h4>
-								  <p><strong>Summary:</strong> [Brief one-sentence summary of this science case]</p>
-								  <p>[Detailed description of the science case, including its significance, methodologies, challenges, and potential impacts. This paragraph should explain the core scientific questions being addressed and why they matter to the broader scientific community.]</p>
-								  <p>[Additional information about related projects, technologies, or techniques being employed in this research area. This can include specific equipment, computational approaches, or theoretical frameworks.]</p>
-								  <p><strong>Related Contributors:</strong> [Contributor Type 2]</p>
-								</div>
-								
-								<div class="science-case">
-								  <h4 id="machine-learning-applications">[Science Case 6]</h4>
-								  <p><strong>Summary:</strong> [Brief one-sentence summary of this science case]</p>
-								  <p>[Detailed description of the science case, including its significance, methodologies, challenges, and potential impacts. This paragraph should explain the core scientific questions being addressed and why they matter to the broader scientific community.]</p>
-								  <p>[Additional information about related projects, technologies, or techniques being employed in this research area. This can include specific equipment, computational approaches, or theoretical frameworks.]</p>
-								  <p><strong>Related Contributors:</strong> [Contributor Type 1]</p>
-								</div>
-							  </div>
-							  
-							  <!-- Science Case Group 3 -->
-							  <div class="science-case-group">
-								<h3>Dark Energy</h3>
-								
-								<div class="science-case">
-								  <h4 id="materials-science">[Science Case 7]</h4>
-								  <p><strong>Summary:</strong> [Brief one-sentence summary of this science case]</p>
-								  <p>[Detailed description of the science case, including its significance, methodologies, challenges, and potential impacts. This paragraph should explain the core scientific questions being addressed and why they matter to the broader scientific community.]</p>
-								  <p>[Additional information about related projects, technologies, or techniques being employed in this research area. This can include specific equipment, computational approaches, or theoretical frameworks.]</p>
-								  <p><strong>Related Contributors:</strong> [Contributor Type 3]</p>
-								</div>
-								
-								<div class="science-case">
-								  <h4 id="quantum-sensing">[Science Case 8]</h4>
-								  <p><strong>Summary:</strong> [Brief one-sentence summary of this science case]</p>
-								  <p>[Detailed description of the science case, including its significance, methodologies, challenges, and potential impacts. This paragraph should explain the core scientific questions being addressed and why they matter to the broader scientific community.]</p>
-								  <p>[Additional information about related projects, technologies, or techniques being employed in this research area. This can include specific equipment, computational approaches, or theoretical frameworks.]</p>
-								  <p><strong>Related Contributors:</strong> [Contributor Type 3]</p>
-								</div>
-								
-								<div class="science-case">
-								  <h4 id="experimental-physics">[Science Case 9]</h4>
-								  <p><strong>Summary:</strong> [Brief one-sentence summary of this science case]</p>
-								  <p>[Detailed description of the science case, including its significance, methodologies, challenges, and potential impacts. This paragraph should explain the core scientific questions being addressed and why they matter to the broader scientific community.]</p>
-								  <p>[Additional information about related projects, technologies, or techniques being employed in this research area. This can include specific equipment, computational approaches, or theoretical frameworks.]</p>
-								  <p><strong>Related Contributors:</strong> [Contributor Type 2]</p>
-								</div>
-							  </div>
+								<p><a href="https://youtube.com/watch?v=1cAHHjAM0wc" class="button small">Watch on YouTube</a></p>
 							</div>
-							
-							<footer class="major">
-							  <ul class="actions special">
-								<li><a href="apply.html" class="button primary">Apply for Collaboration</a></li>
-								<li><a href="research.html" class="button">Explore Research</a></li>
-							  </ul>
-							</footer>
-						  </section>
 
-					</div>
+							<div class="playlist-item">
+								<h3>TVS Software Workshop 3</h3>
+								<div class="video-container">
+								<iframe width="560" height="315"
+									src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnMZx0l2P7dfgto_EI-7IKC9"
+									title="TVS Software Workshop 3"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen>
+								</iframe>
+								</div>
+								<p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnMZx0l2P7dfgto_EI-7IKC9" class="button small">View Full Playlist</a></p>
+							</div>
 
-				<!-- Footer -->
+							<div class="playlist-item">
+								<h3>TVS Software Carpentry Workshop 2</h3>
+								<div class="video-container">
+								<iframe width="560" height="315"
+									src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnO9e0CSWZRu3tDMpL2qwVGG"
+									title="TVS Software Carpentry Workshop 2"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen>
+								</iframe>
+								</div>
+								<p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnO9e0CSWZRu3tDMpL2qwVGG" class="button small">View Full Playlist</a></p>
+							</div>
+
+							<div class="playlist-item">
+								<h3>TVS Software Workshop 2</h3>
+								<div class="video-container">
+								<iframe width="560" height="315"
+									src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnP__1wMBeUcXTvk_F50kkxC"
+									title="TVS Software Workshop 2"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen>
+								</iframe>
+								</div>
+								<p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnP__1wMBeUcXTvk_F50kkxC" class="button small">View Full Playlist</a></p>
+							</div>
+
+							<div class="playlist-item">
+								<h3>TVS Software Workshop 1</h3>
+								<div class="video-container">
+								<iframe width="560" height="315"
+									src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnP0KeNdzvIbUU0GcfCm5udu"
+									title="TVS Software Workshop 1"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen>
+								</iframe>
+								</div>
+								<p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnP0KeNdzvIbUU0GcfCm5udu" class="button small">View Full Playlist</a></p>
+							</div>
+
+							<div class="playlist-item">
+								<h3>Intermediate Python Development Course</h3>
+								<div class="video-container">
+								<iframe width="560" height="315"
+									src="https://www.youtube.com/embed/videoseries?list=PLY7gSb9nTMnP8Nu7HxcQae3YPSq1PAc6d"
+									title="Intermediate Python Development Course"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen>
+								</iframe>
+								</div>
+								<p><a href="https://youtube.com/playlist?list=PLY7gSb9nTMnP8Nu7HxcQae3YPSq1PAc6d" class="button small">View Full Playlist</a></p>
+							</div>
+
+							</div>
+						</section>
+									</div>
 				<footer id="footer">
-					<section>
+					<section class="col-12" style="text-align: justify;">
 					  <h2>The TVS Science Collaboration</h2>
 					  <p>The Vera C. Rubin Observatory Legacy Survey of Space and Time (LSST) Transients and Variable (TVS) Stars Collaboration focuses on the study of the transient and variable sky through the LSST data, including a large and diverse range of phenomena: variable events, periodic or not, explosive and eruptive transients, and geometric transients (e.g. eclipsing binaries and planets). Variability is a tell tale of the nature of the objects observed, but it also enables galactic studies (the mapping of the galactic structure), extragalactic studies (the characterization of the intracluster medium), and cosmological studies. Because of their physical and phenomenological diversity, the object we study span a wide range of timescales and present themselves in a range of brightnesses and colors. We work to understand and maximize the potential of LSST in the exploration of the variable and transient sky, one of the 4 science drivers of LSST. LSST also holds great potential for discovery of new transient phenomena, especially at the very short and very long time scales.</p>
 					  <ul class="actions">
-						<li><a href="about.html" class="button">Our Mission</a></li>
+						<li><a href="https://lsst-tvssc.github.io/" class="button">TVS Science Collaboration Website</a></li>
 					  </ul>
 					</section>
-					
-					<section>
-					  <h2>Contact Information</h2>
-					  <dl class="alt">
-						<dt>Main Office</dt>
-						<dd>[Institution Name] &bull; [City, State ZIP] &bull; [Country]</dd>
-						<dt>Collaboration Support</dt>
-						<dd>[Phone Number]</dd>
-						<dt>Email</dt>
-						<dd><a href="mailto:contact@tvsscience.org">contact@tvsscience.org</a></dd>
-					  </dl>
-					  <ul class="icons">
-						<li><a href="https://lsst-tvssc.github.io/#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/LSST-TVSSC" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
-						<li><a href="https://youtube.com/@rubinlssttvssciencecollabo9219?si=CPfhTBiLMxQCsnod" class="icon fa-youtube alt"><span class="label">YouTube</span></a></li>
-					  </ul>
-					</section>
-					
-					<section>
-					  <h2>Funding & Support</h2>
-					  <p>This collaboration is supported by grants from National Science Foundation, Department of Energy, and contributions from our institutional partners.</p>
-					  <div class="partner-logos">
-						<!-- Placeholder for partner logos -->
-						<span>[Partner Logo 1]</span>
-						<span>[Partner Logo 2]</span>
-						<span>[Partner Logo 3]</span>
-					  </div>
-					</section>
-				  
-					<section>
+							  
+					<section class="col-12" style="text-align: justify;">
 					  <h2>Development Team</h2>
-					  <p>Website developed by:</p>
-					  <ul class="developer-list">
-						<li>Meet J. Vyas</li>
-						<li>Siddharth Chaini</li>
-					  </ul>
+					  <p>This website is developed by Meet J. Vyas with the suggestions for the template design by Siddharth Chaini, and the content was reviewed by Oleksandra (Alex) Razim . This website is maintained by the Software Task Force of the Transient and Variable Stars Science Collaboration of the Vera C. Rubin Observatory Legacy Survey of Space and Time (LSST). The website is hosted on GitHub Pages.</p>
 					</section>
+					
+					<p>© <span id="year"></span> Software Task Force TVS SC. All rights reserved.</p>
 				  </footer>
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script> document.getElementById("year").textContent = new Date().getFullYear(); </script>
-
 	</body>
 </html>

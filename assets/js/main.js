@@ -121,3 +121,111 @@
 		});
 
 })(jQuery);
+
+// Smooth Scroll to Anchor (adjusted for spacing)
+document.querySelectorAll('.toc-list a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = 100; // <- adjust this based on your layout
+      const elementPosition = targetElement.offsetTop;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// // Collapsible TOC Toggle
+//     const tocToggle = document.getElementById('tocToggle');
+//     const tocList = document.getElementById('tocList');
+
+//     tocToggle.addEventListener('click', () => {
+//       tocList.classList.toggle('collapsed');
+//       tocToggle.classList.toggle('collapsed');
+//     });
+
+const tocToggle = document.getElementById('tocToggle');
+const tocList = document.getElementById('tocList');
+const tocSymbol = document.getElementById('tocSymbol');
+
+tocToggle.addEventListener('click', () => {
+  const isCollapsed = tocList.classList.toggle('collapsed');
+  tocToggle.classList.toggle('collapsed');
+  tocSymbol.textContent = isCollapsed ? '+' : '–';
+});
+
+
+// Dark mode toggle functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const darkModeToggle = document.getElementById('darkmode-toggle');
+    const themeLabel = document.querySelector('.theme-switch');
+    const body = document.body;
+
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    
+    // Apply the saved theme on page load
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            body.classList.add('dark-mode');
+            themeLabel.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        } else {
+            body.classList.remove('dark-mode');
+            themeLabel.classList.remove('dark-mode');
+            darkModeToggle.checked = false;
+        }
+    }
+
+    // Initialize theme
+    applyTheme(currentTheme);
+
+    // Toggle theme when checkbox is clicked
+    darkModeToggle.addEventListener('change', function() {
+        if (this.checked) {
+            // Switch to dark mode
+            body.classList.add('dark-mode');
+            themeLabel.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            // Switch to light mode
+            body.classList.remove('dark-mode');
+            themeLabel.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+
+    // Optional: Listen for system theme changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Only apply system preference if no user preference is saved
+    if (!localStorage.getItem('theme')) {
+        if (mediaQuery.matches) {
+            applyTheme('dark');
+        }
+    }
+
+    // Optional: Listen for system theme changes in real-time
+    mediaQuery.addEventListener('change', function(e) {
+        // Only apply system preference if no user preference is saved
+        if (!localStorage.getItem('theme')) {
+            applyTheme(e.matches ? 'dark' : 'light');
+        }
+    });
+});
+
+function toggleDescription(id) {
+	const content = document.getElementById(id);
+	const header = content.previousElementSibling;
+	content.classList.toggle('expanded');
+	header.classList.toggle('expanded');
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
