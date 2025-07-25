@@ -3805,7 +3805,15 @@ input, select, textarea {
   .header-text {
     flex: 2;
     text-align: center;
+	color: black;
   }
+
+.header-text h1,
+.header-text h2,
+.header-text p {
+	color: black;
+}
+
 
   /* Responsive adjustments */
   @media screen and (max-width: 768px) {
@@ -4393,6 +4401,11 @@ body.dark-mode .toc-list li {
   color: #f1f1f1;
 }
 
+body.dark-mode .header-text h1,
+body.dark-mode .header-text h2,
+body.dark-mode .header-text p {
+	color: #f1f1f1;
+}
 /* body.dark-mode .toc-list li:hover {
   background-color: #2a2a2a;
   border-left-color: #80dfff;
